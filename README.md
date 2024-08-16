@@ -2,7 +2,4 @@
  Login & Register pages creating usng these part
 
  ## Languages
- ** HTML
- ** CSS
- ** JS
- ** PHP
+   `HTML`   `CSS`  `JS`  `PHP`
