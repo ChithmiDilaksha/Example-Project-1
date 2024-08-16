@@ -1,22 +1,3 @@
-/* Overall section styling */
-.slider_section {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-/* Login box styling */
-.login-box {
-  background: rgba(255, 255, 255, 0.8); /* Transparent white background */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px); /* Optional: Blurs the background behind the form */
-  margin: auto;
-  max-width: 400px;
-  width: 100%;
-}
-
 .remember-forgot {
     display: flex;
     justify-content: space-between;
@@ -59,10 +40,13 @@
 }
 /* Wrapper Styles */
 .wrapper {
+    margin-right: 0px;
+    margin-bottom: 75px;
+    margin-top: 0px;
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: #fff;
     border-radius: 10px;
