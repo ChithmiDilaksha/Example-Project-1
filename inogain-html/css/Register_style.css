@@ -1,0 +1,94 @@
+/* Form Styles */
+.wrapper {
+   margin-left: 75px;
+    margin-bottom: 75px;
+    margin-top: 0px;
+    width: 500px;
+    background: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.input-box {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  font-size: 1rem;
+  background: transparent;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.btnregister {
+    margin-left: 5%;
+    width: 90%; /* Adjust as needed */
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    justify-content: center; /* Center text inside the button */
+    align-items: center;
+    text-align: center; /* Ensure text inside is centered */
+}
+
+/* Button hover effect */
+.btnregister:hover {
+    background: #0056b3;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-link p {
+  margin: 0;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
