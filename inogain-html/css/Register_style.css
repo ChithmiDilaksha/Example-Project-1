@@ -1,8 +1,8 @@
 /* Form Styles */
 .wrapper {
-   margin-left: 75px;
-    margin-bottom: 75px;
-    margin-top: 0px;
+   margin-left: 0px;
+    margin-bottom: 27px;
+   margin-top: 0px;
     width: 500px;
     background: transparent;
     border: 5px solid rgba(255, 255, 255, 0.2);
@@ -10,16 +10,18 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: #fff;
     border-radius: 10px;
-    padding: 40px 30px;
+    padding: 30px 15px;
 
 }
 
 .wrapper h1 {
+  /*margin-bottom: 20px;*/
+  margin-top: 0px;
     font-size: 40px;
     text-align: center;
 }
 .input-box {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -32,15 +34,16 @@
 }
 
 .input-box input {
-  width: 100%;
-  padding: 10px 15px 10px 40px;
+  margin-left: 5px;
+  width: 95%;
+  padding: 10px 15px 10px 50px;
   border: none;
   outline: none;
   border: 2px solid rgba(255, 255, 255, .2);
   font-size: 1rem;
   background: transparent;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
 }
 .input-box input::placeholder {
