@@ -39,6 +39,36 @@
   <!-- Login Page Icon style -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
+
+<style>
+    /* Custom Styles with Updated Colors */
+    #features {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Updated gradient background */
+      color: #fff;
+    }
+    .feature-box {
+      background: #f8f9fa; /* Light background for the feature cards */
+      color: #333;
+      border-radius: 10px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .feature-box h4 {
+      color: #ff7e5f; /* Color for the feature titles */
+    }
+    .feature-box i {
+      color: #feb47b; /* Icon color */
+    }
+    .text-muted {
+      color: #6c757d !important; /* Subtle muted text color */
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -122,7 +152,7 @@
                         </label>
                         <a href="forgot-password.html">Forgot Password?</a>
                       </div>
-                      <button type="submit" class="btn" name="btn">Sign In</button>
+                      <button type="submit" class="btn" name="btn" onclick="goToDashboard(event)">Sign In</button>
                       <div class="register-link">
                         <p>Don't have an account? <a href="register.html">Register</a></p>
                       </div>
@@ -251,6 +281,16 @@
   </section>
   <!-- footer section -->
 
+
+  <script>
+        // JavaScript function to redirect to the dashboard
+        function goToDashboard(event) {
+            event.preventDefault(); // Prevent form submission (if using a form)
+            // Redirect to the dashboard page
+            window.location.href = "dashboard.html";  // Change this to your dashboard URL
+        }
+    </script>
+    
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
