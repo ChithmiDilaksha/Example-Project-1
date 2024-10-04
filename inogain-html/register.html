@@ -14,9 +14,6 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
   <!-- Font Awesome -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
 
@@ -24,10 +21,7 @@
   <link href="css/Register_style.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- Responsive Styles -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- Box Icons for Login Page -->
+  <!-- Box Icons for Form Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <!-- Country Phone Input Styles -->
@@ -36,9 +30,12 @@
   <!-- intl-tel-input Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 
-   <!-- Add telegram icon to In fo section -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><!-- bootstrap core css -->
-
+  <!-- Custom Styles for Two Inputs in One Row -->
+  <style>
+    .input-box { position: relative; margin-bottom: 20px; }
+    .form-row { display: flex; justify-content: space-between; }
+    .form-row .input-box { width: 48%; }
+  </style>
 </head>
 
 <body>
@@ -46,7 +43,7 @@
   <div class="hero_area">
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
+        <img src="images/hero-bg.png" alt="Background Image">
       </div>
     </div>
 
@@ -57,151 +54,76 @@
           <a class="navbar-brand" href="index.html">
             <span>Finexo</span>
           </a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="service.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </div>
     </header>
 
     <!-- Slider Section with Register Form -->
     <section class="slider_section">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <!-- Register Form -->
-                  <div class="wrapper">
-                    <form action="register.php" method="POST">
-                      <h1>Register</h1>
-                      <div class="input-box">
-                        <i class='bx bx-user-circle'></i>
-                        <input type="text" name="username" placeholder="Username" required>
-                      </div>
-                      <div class="input-box">
-                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
-                      </div>
-                      <div class="input-box">
-                        <i class='bx bx-envelope'></i>
-                        <input type="email" name="email" placeholder="Email" required>
-                      </div>
-                      <div class="input-box">
-                        <i class='bx bxs-lock-alt'></i>
-                        <input type="password" name="password" placeholder="Password" required>
-                      </div>
-                      <div class="input-box">
-                        <i class='bx bxs-lock-alt'></i>
-                        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
-                      </div>
-                      <div class="input-box">
-                        <i class='bx bx-key'></i>
-                        <input type="invitation_code" name="invitation_code" placeholder="Invitation Code" required>
-                      </div>
-                      <button type="submit" class="btnregister" name="btnregister">Register</button>
-                      <div class="login-link">
-                        <p>Already have an account? <a href="login.html">Login</a></p>
-                      </div>
-                    </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Register Form -->
+            <div class="wrapper">
+              <form action="register.php" method="POST">
+                <h1>Register</h1>
+
+                <!-- Username -->
+                <div class="input-box">
+                  <i class='bx bx-user-circle'></i>
+                  <input type="text" name="username" placeholder="Username" required>
+                </div>
+
+                <!-- Phone Number and Invitation Code in One Row -->
+                <div class="form-row">
+                  <!-- Phone Number -->
+                  <div class="input-box">
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+                  </div>
+                  
+                  <!-- Invitation Code -->
+                  <div class="input-box">
+                    <i class='bx bx-key'></i>
+                    <input type="text" name="invitation_code" placeholder="Invitation Code" required>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img src="images/slider-img.png" class="img-fluid" alt="Slider Image">
-                  </div>
+
+                <!-- Email -->
+                <div class="input-box">
+                  <i class='bx bx-envelope'></i>
+                  <input type="email" name="email" placeholder="Email" required>
                 </div>
-              </div>
+
+                <!-- Password -->
+                <div class="input-box">
+                  <i class='bx bxs-lock-alt'></i>
+                  <input type="password" name="password" placeholder="Password" required>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="input-box">
+                  <i class='bx bxs-lock-alt'></i>
+                  <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+
+                <button type="submit" class="btnregister" name="btnregister">Register</button>
+                <div class="login-link">
+                  <p>Already have an account? <a href="login.html">Login</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/slider-img.png" class="img-fluid" alt="Slider Image">
             </div>
           </div>
         </div>
       </div>
     </section>
   </div>
- <!-- info section -->
 
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_contact">
-            <h4>
-              Contact us
-            </h4>
-            <div class="contact_link_box">
-               <a href="https://t.me/yourTelegramLink" target="_blank">
-                <i class="fab fa-telegram"></i> Telegram
-             </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 info_col">
-          <div class="info_detail">
-            <h4>
-              Info
-            </h4>
-            <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
-            <h4>
-              Links
-            </h4>
-            <div class="info_links">
-              <a class="active" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="service.html">
-                Services
-              </a>
-              <a class="" href="why.html">
-                Why Us
-              </a>
-              <a class="" href="team.html">
-                Team
-              </a>
-            </div>
-          </div>
-        </div>
-        
-<div class="col-md-6 col-lg-2 info_col"> 
-  <h4>Subscribe to Our YouTube Channel</h4>
-  <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" width="130" color="white" >
-  </a>
-</div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <!-- end info section -->
-  <!-- intl-tel-input Initialization Script -->
+  <!-- intl-tel-input Initialization Script for Phone Input -->
   <script>
     const phoneInputField = document.querySelector("#phoneNumber");
     const phoneInput = intlTelInput(phoneInputField, {
@@ -214,6 +136,14 @@
       },
       utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
     });
+
+    // Event listener for country change
+    phoneInputField.addEventListener('countrychange', function () {
+      const countryData = phoneInput.getSelectedCountryData();
+      if (countryData.iso2 === "lk") {
+        phoneInputField.value = "+94";
+      }
+    });
   </script>
 
   <!-- jQuery -->
@@ -221,9 +151,6 @@
 
   <!-- Bootstrap JS -->
   <script src="js/bootstrap.js"></script>
-
-  <!-- Owl Carousel JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <!-- Custom JS -->
   <script src="js/custom.js"></script>
