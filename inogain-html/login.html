@@ -17,6 +17,9 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+  <!-- Add telegram icon to In fo section -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"><!-- bootstrap core css -->
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -39,36 +42,6 @@
   <!-- Login Page Icon style -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-
-
-<style>
-    /* Custom Styles with Updated Colors */
-    #features {
-      background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Updated gradient background */
-      color: #fff;
-    }
-    .feature-box {
-      background: #f8f9fa; /* Light background for the feature cards */
-      color: #333;
-      border-radius: 10px;
-      padding: 20px;
-      transition: all 0.3s ease;
-    }
-    .feature-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-    .feature-box h4 {
-      color: #ff7e5f; /* Color for the feature titles */
-    }
-    .feature-box i {
-      color: #feb47b; /* Icon color */
-    }
-    .text-muted {
-      color: #6c757d !important; /* Subtle muted text color */
-    }
-  </style>
-  
 </head>
 
 <body>
@@ -181,42 +154,13 @@
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_contact">
             <h4>
-              Address
+              Contact us
             </h4>
             <div class="contact_link_box">
-              <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
-              </a>
+               <a href="https://t.me/yourTelegramLink" target="_blank">
+                <i class="fab fa-telegram"></i> Telegram
+             </a>
             </div>
-          </div>
-          <div class="info_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 info_col">
@@ -253,17 +197,15 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Subscribe
-          </h4>
-          <form action="#">
-            <input type="text" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
-        </div>
+        
+<div class="col-md-6 col-lg-2 info_col"> 
+  <h4>Subscribe to Our YouTube Channel</h4>
+  <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube" width="130" color="white" >
+  </a>
+</div>
+
+
       </div>
     </div>
   </section>
@@ -290,7 +232,6 @@
             window.location.href = "dashboard.html";  // Change this to your dashboard URL
         }
     </script>
-    
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
